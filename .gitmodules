@@ -1,0 +1,3 @@
+[submodule "tex"]
+	path = tex
+	url = https://github.com/aic-factcheck/pipeline_paper_2023
