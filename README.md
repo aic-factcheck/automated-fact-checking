@@ -28,17 +28,17 @@ Overall information on running the code (TBD)
 
 ## QACG Models
 1. Question Generation:
-* [question_generation-SUM](https://huggingface.co/ctu-aic) (TBD)
-* [question_generation-CS](https://huggingface.co/ctu-aic) (TBD)
-* [question_generation-EN](https://huggingface.co/ctu-aic) (TBD)
-* [question_generation-PL](https://huggingface.co/ctu-aic) (TBD)
-* [question_generation-SK](https://huggingface.co/ctu-aic) (TBD)
+* [mt5-large-qg-sum](https://huggingface.co/ctu-aic) (TBD)
+* [mt5-large-qg-cs](https://huggingface.co/ctu-aic) (TBD)
+* [mt5-large-qg-en](https://huggingface.co/ctu-aic) (TBD)
+* [mt5-large-qg-pl](https://huggingface.co/ctu-aic) (TBD)
+* [mt5-large-qg-sk](https://huggingface.co/ctu-aic) (TBD)
 2. Claim Generation:
-* [claim_generation-SUM](https://huggingface.co/ctu-aic) (TBD)
-* [claim_generation-CS](https://huggingface.co/ctu-aic) (TBD)
-* [claim_generation-EN](https://huggingface.co/ctu-aic) (TBD)
-* [claim_generation-PL](https://huggingface.co/ctu-aic) (TBD)
-* [claim_generation-SK](https://huggingface.co/ctu-aic) (TBD)
+* [mt5-large-cg-sum](https://huggingface.co/ctu-aic) (TBD)
+* [mt5-large-cg-cs](https://huggingface.co/ctu-aic) (TBD)
+* [mt5-large-cg-en](https://huggingface.co/ctu-aic) (TBD)
+* [mt5-large-cg-pl](https://huggingface.co/ctu-aic) (TBD)
+* [mt5-large-cg-sk](https://huggingface.co/ctu-aic) (TBD)
 
 ## QACG Generated Data
 1. [QACG-CS](https://huggingface.co/ctu-aic) (TBD)
