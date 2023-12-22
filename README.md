@@ -1,7 +1,17 @@
 # multilingual-fact-checking
-Data, models, and code to reproduce our _Pipeline and Dataset Generation for Automated Fact-checking in Almost Any Language_ paper.
+Data, models, and code to reproduce our [Pipeline and Dataset Generation for Automated Fact-checking in Almost Any Language](https://arxiv.org/abs/2312.10171) paper.
+Currently in review for [NCAA](https://link.springer.com/journal/521) journal.
 
-**❗Note: missing code, data, and models will be uploaded by mid-January 2024}}❗**
+```
+@article{drchal2023pipeline,
+  title={Pipeline and Dataset Generation for Automated Fact-checking in Almost Any Language},
+  author={Drchal, Jan and Ullrich, Herbert and Mlyn{\'a}{\v{r}}, Tom{\'a}{\v{s}} and Moravec, V{\'a}clav},
+  journal={arXiv preprint arXiv:2312.10171},
+  year={2023}
+}
+```
+
+**❗Note: the missing code, data, and models will be uploaded by mid-January 2024❗**
 
 ## Code
 * [QACG Data Generation](https://github.com/aic-factcheck/Zero-shot-Fact-Verification)
