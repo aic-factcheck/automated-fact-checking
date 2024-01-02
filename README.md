@@ -21,10 +21,10 @@ Currently in review for [NCAA](https://link.springer.com/journal/521) journal.
 Overall information on running the code (TBD)
 
 ## Data to Train QACG Models
-1. [SQuAD-cs](https://huggingface.co/ctu-aic) (TBD)
-2. [QA2D-cs](https://huggingface.co/ctu-aic) (TBD)
-3. [QA2D-pl](https://huggingface.co/ctu-aic) (TBD)
-4. [QA2D-sk](https://huggingface.co/ctu-aic) (TBD)
+1. [SQuAD-cs](https://huggingface.co/ctu-aic/squad-cs) 
+2. [QA2D-cs](https://huggingface.co/ctu-aic/qa2d-cs) 
+3. [QA2D-pl](https://huggingface.co/ctu-aic/qa2d-sk) 
+4. [QA2D-sk](https://huggingface.co/ctu-aic/qa2d-pl) 
 
 ## QACG Models
 1. Question Generation:
@@ -41,12 +41,12 @@ Overall information on running the code (TBD)
 * [mt5-large-cg-sk](https://huggingface.co/ctu-aic) (TBD)
 
 ## QACG Generated Data
-1. [QACG-CS](https://huggingface.co/ctu-aic) (TBD)
-2. [QACG-EN](https://huggingface.co/ctu-aic) (TBD)
-3. [QACG-PL](https://huggingface.co/ctu-aic) (TBD)
-4. [QACG-SK](https://huggingface.co/ctu-aic) (TBD)
-5. [QACG-MIX](https://huggingface.co/ctu-aic) (TBD)
-6. [QACG-SUM](https://huggingface.co/ctu-aic) (TBD)
+1. [QACG-CS](https://huggingface.co/ctu-aic/qacg-cs)
+2. [QACG-EN](https://huggingface.co/ctu-aic/qacg-en)
+3. [QACG-PL](https://huggingface.co/ctu-aic/qacg-pl)
+4. [QACG-SK](https://huggingface.co/ctu-aic/qacg-sk)
+5. [QACG-MIX](https://huggingface.co/ctu-aic/qacg-mix)
+6. [QACG-SUM](https://huggingface.co/ctu-aic/qacg-sum)
 
 ## ColBERTV2 Evidence Retrieval
 [colbertv2-QACG-SUM](https://huggingface.co/ctu-aic) (TBD)
