@@ -49,7 +49,7 @@ Overall information on running the code (TBD)
 6. [QACG-SUM](https://huggingface.co/datasets/ctu-aic/qacg-sum)
 
 ## ColBERTV2 Evidence Retrieval
-[colbertv2-QACG-SUM](https://huggingface.co/ctu-aic) (TBD)
+[colbertv2-QACG-SUM](https://huggingface.co/ctu-aic/colbertv2-qacg-sum/tree/main)
 
 ## NLI Veracity Evaluation
 [nli-QACG-SUM](https://huggingface.co/ctu-aic) (TBD)
