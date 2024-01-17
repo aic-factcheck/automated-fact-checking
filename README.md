@@ -28,13 +28,13 @@ Overall information on running the code (TBD)
 
 ## QACG Models
 1. Question Generation:
-* [mt5-large-qg-sum](https://huggingface.co/ctu-aic) (TBD)
+* [mt5-large-qg-sum](https://huggingface.co/ctu-aic/mt5-large-qg-sum)
 * [mt5-large-qg-cs](https://huggingface.co/ctu-aic) (TBD)
 * [mt5-large-qg-en](https://huggingface.co/ctu-aic) (TBD)
 * [mt5-large-qg-pl](https://huggingface.co/ctu-aic) (TBD)
 * [mt5-large-qg-sk](https://huggingface.co/ctu-aic) (TBD)
 2. Claim Generation:
-* [mt5-large-cg-sum](https://huggingface.co/ctu-aic) (TBD)
+* [mt5-large-cg-sum](https://huggingface.co/ctu-aic/mt5-large-cg-sum)
 * [mt5-large-cg-cs](https://huggingface.co/ctu-aic) (TBD)
 * [mt5-large-cg-en](https://huggingface.co/ctu-aic) (TBD)
 * [mt5-large-cg-pl](https://huggingface.co/ctu-aic) (TBD)
@@ -52,7 +52,7 @@ Overall information on running the code (TBD)
 [colbertv2-QACG-SUM](https://huggingface.co/ctu-aic/colbertv2-qacg-sum/tree/main)
 
 ## NLI Veracity Evaluation
-[nli-QACG-SUM](https://huggingface.co/ctu-aic) (TBD)
+[nli-QACG-SUM](https://huggingface.co/ctu-aic/nli-qacg-sum)
 
 ## NLI Annotations
 (TBD)
