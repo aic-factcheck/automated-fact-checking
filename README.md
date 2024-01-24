@@ -11,7 +11,7 @@ Currently in review for [NCAA](https://link.springer.com/journal/521) journal.
 }
 ```
 
-**❗Note: the missing code, data, and models will be uploaded by mid-January 2024❗**
+**❗Note: the missing annotations and platform will be uploaded by early February 2024❗**
 
 ## Code
 * [QACG Data Generation](https://github.com/aic-factcheck/Zero-shot-Fact-Verification)
