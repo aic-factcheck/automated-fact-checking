@@ -1,4 +1,4 @@
-# multilingual-fact-checking
+# Automated Fact-Checking
 Data, models, and code to reproduce our [Pipeline and Dataset Generation for Automated Fact-checking in Almost Any Language](https://arxiv.org/abs/2312.10171) paper.
 Currently in review for [NCAA](https://link.springer.com/journal/521) journal.
 
