@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --time=4:00:00
+#SBATCH --nodes=1 --ntasks-per-node=1 --cpus-per-task=4
+#SBATCH --partition=amdgpufast --gres=gpu:1
+#SBATCH --mem=64G
+#SBATCH --out=../logs/fsearch_wiki_pl.%j.out
+
+# if PROJECT_DIR is not defined, then expect we are in ${PROJECT_DIR}/slurm
+if [[ -z "${PROJECT_DIR}" ]]; then
+    export PROJECT_DIR="$(dirname "$(pwd)")"
+fi
+
+# load virtual environment etc.
+if [ -f "${PROJECT_DIR}/init_environment_amd.sh" ]; then
+    source "${PROJECT_DIR}/init_environment_amd.sh"
+fi
+
+cd ${PROJECT_DIR}
+
+pwd
+
+python factsearch/run_factsearch.py --port 9861 cfg/factsearch/plwiki-20230801.json

@@ -1,0 +1,88 @@
+{
+    "corpus_name": "Wikipedia PL🇵🇱",
+    "corpus_version": "(2023/08/01)",
+    "lang": "pl",
+    "hosting_path": "wikipl",
+    "db_path": "/mnt/data/factcheck/wiki/pl/20230801/paragraphs/plwiki-20230801-paragraphs.jsonl",
+    "default_date": "2023-08-01T00:00:00",
+    "original_site_prefix": "https://pl.wikipedia.org/wiki/",
+    "temporal": false,
+    "retrieval_models": {
+        "anserini": {
+            "name": "Anserini",
+            "type": "rest-api",
+            "url": "http://a03:8153/api/v1/retrieve/"
+        },
+        "colbertv2": {
+            "name": "ColBERTv2",
+            "type": "rest-api",
+            "url": "http://a01:8053/api/v1/retrieve/"
+        },
+        "directed": {
+            "name": "DIR (ColBERTv2)",
+            "type": "directed",
+            "retrieval_models": ["colbertv2"],
+            "similarity": "fasttext",
+            "stopword_list": "data/stopwords/pl.txt",
+            "ner_model_name": "/mnt/data/factcheck/models/czert/PAV-ner-CNEC",
+            "fast_text_model": "/mnt/data/factcheck/fasttext/cc.pl.300.bin",
+            "similarity_threshold": 0.5,
+            "similarity_min_chars": 3,
+            "ner_weight": 2.0
+        }
+    },
+    "nli_models": {
+        "xlmr-nli-qacg-sum": {
+            "name": "xlmr-nli-qacg-sum",
+            "model_name": "ctu-aic/xlm-roberta-large-nli-qacg-sum",
+            "type": "default",
+            "claim_first": true
+        },
+        "xlmr-nli-csfever": {
+            "name": "xlmr-nli-csfever",
+            "model_name": "ctu-aic/xlm-roberta-large-nli-csfever",
+            "type": "default",
+            "claim_first": true
+        },
+        "xlmr-nli-enfever": {
+            "name": "xlmr-nli-enfever",
+            "model_name": "ctu-aic/xlm-roberta-large-nli-enfever",
+            "type": "default",
+            "claim_first": true
+        }
+    },
+    "scoring_models": {
+        "minilm": {
+            "name": "MiniLM",
+            "model_name": "all-MiniLM-L6-v2"
+        }
+    },
+    "slots": [
+        {
+            "retrieval_model_name": "anserini",
+            "k": 3,
+            "importance": "minilm",
+            "importance_type": "sentence",
+            "nli_model_name": "xlmr-nli-enfever"
+        }
+    ],
+    "emphasize": {
+        "similarity": "jaro",
+        "stopword_list": "data/stopwords/pl.txt",
+        "similarity_threshold": 0.8,
+        "similarity_min_chars": 3
+    },
+    "initslots": 1,
+    "show_search_titles": false,
+    "show_detailed_score": false,
+    "show_model": false,
+    "show_n_results": true,
+    "show_importance": false,
+    "show_granularity": false,
+    "show_nli_model": false,
+
+    "merge_search_and_slot_options": true,
+
+    "show_stats": false,
+    "show_score": true
+}

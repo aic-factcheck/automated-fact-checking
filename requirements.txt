@@ -1,0 +1,15 @@
+accelerate
+dash
+dash_bootstrap_components
+fasttext
+humanize
+jaro-winkler
+numpy
+portion
+scikit-learn
+sentence-transformers
+stanza
+transformers
+ufal.morphodita
+ujson
+git+https://github.com/aic-factcheck/aic-nlp-utils

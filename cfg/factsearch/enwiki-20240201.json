@@ -1,0 +1,81 @@
+{
+    "corpus_name": "Wikipedia EN🇬🇧",
+    "corpus_version": "(2024/02/01)",
+    "lang": "en",
+    "hosting_path": "wikien",
+    "db_path": "/mnt/data/factcheck/wiki/en/20240201/paragraphs/enwiki-20240201-paragraphs.jsonl",
+    "default_date": "2024-02-01T00:00:00",
+    "original_site_prefix": "https://en.wikipedia.org/wiki/",
+    "temporal": false,
+    "retrieval_models": {
+        "anserini": {
+            "name": "Anserini",
+            "type": "rest-api",
+            "url": "http://a01:8151/api/v1/retrieve/"
+        },
+        "colbertv2": {
+            "name": "ColBERTv2",
+            "type": "rest-api",
+            "url": "http://a01:8051/api/v1/retrieve/"
+        },
+        "directed": {
+            "name": "DIR (ColBERTv2)",
+            "type": "directed",
+            "retrieval_models": ["colbertv2"],
+            "similarity": "fasttext",
+            "stopword_list": "data/stopwords/en.txt",
+            "fast_text_model": "/mnt/data/factcheck/fasttext/cc.en.300.bin",
+            "similarity_threshold": 0.5,
+            "similarity_min_chars": 3,
+            "ner_weight": 2.0
+        }
+    },
+    "nli_models": {
+        "xlmr-nli-qacg-sum": {
+            "name": "xlmr-nli-qacg-sum",
+            "model_name": "ctu-aic/xlm-roberta-large-nli-qacg-sum",
+            "type": "default",
+            "claim_first": true
+        },
+        "xlmr-nli-enfever": {
+            "name": "xlmr-nli-enfever",
+            "model_name": "ctu-aic/xlm-roberta-large-nli-enfever",
+            "type": "default",
+            "claim_first": true
+        }
+    },
+    "scoring_models": {
+        "minilm": {
+            "name": "MiniLM",
+            "model_name": "all-MiniLM-L6-v2"
+        }
+    },
+    "slots": [
+        {
+            "retrieval_model_name": "anserini",
+            "k": 3,
+            "importance": "minilm",
+            "importance_type": "sentence",
+            "nli_model_name": "xlmr-nli-enfever"
+        }
+    ],
+    "emphasize": {
+        "similarity": "jaro",
+        "stopword_list": "data/stopwords/en.txt",
+        "similarity_threshold": 0.8,
+        "similarity_min_chars": 2
+    },
+    "initslots": 1,
+    "show_search_titles": false,
+    "show_detailed_score": false,
+    "show_model": false,
+    "show_n_results": true,
+    "show_importance": false,
+    "show_granularity": false,
+    "show_nli_model": false,
+
+    "merge_search_and_slot_options": true,
+
+    "show_stats": false,
+    "show_score": true
+}
