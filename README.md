@@ -11,12 +11,10 @@ Currently in review for [NCAA](https://link.springer.com/journal/521) journal.
 }
 ```
 
-**❗Note: the missing annotations and platform will be uploaded by early February 2024❗**
-
 ## Code
 * [QACG Data Generation](https://github.com/aic-factcheck/Zero-shot-Fact-Verification)
 * [ColBERTv2](https://github.com/aic-factcheck/ColBERTv2)
-* [FactSearch](https://github.com/aic-factcheck/Zero-shot-Fact-Verification) (TBD)
+* [FactSearch](https://github.com/aic-factcheck/Zero-shot-Fact-Verification)
 
 Overall information on running the code (TBD)
 
@@ -34,18 +32,18 @@ Overall information on running the code (TBD)
 * [mt5-large-cg-sum](https://huggingface.co/ctu-aic/mt5-large-cg-sum)
   
 ## QACG Generated Data
-1. [QACG-CS](https://huggingface.co/datasets/ctu-aic/qacg-cs)
-2. [QACG-EN](https://huggingface.co/datasets/ctu-aic/qacg-en)
-3. [QACG-PL](https://huggingface.co/datasets/ctu-aic/qacg-pl)
-4. [QACG-SK](https://huggingface.co/datasets/ctu-aic/qacg-sk)
-5. [QACG-MIX](https://huggingface.co/datasets/ctu-aic/qacg-mix)
-6. [QACG-SUM](https://huggingface.co/datasets/ctu-aic/qacg-sum)
+1. [QACG-cs](https://huggingface.co/datasets/ctu-aic/qacg-cs)
+2. [QACG-en](https://huggingface.co/datasets/ctu-aic/qacg-en)
+3. [QACG-pl](https://huggingface.co/datasets/ctu-aic/qacg-pl)
+4. [QACG-sk](https://huggingface.co/datasets/ctu-aic/qacg-sk)
+5. [QACG-mix](https://huggingface.co/datasets/ctu-aic/qacg-mix)
+6. [QACG-sum](https://huggingface.co/datasets/ctu-aic/qacg-sum)
 
 ## ColBERTV2 Evidence Retrieval
 [colbertv2-QACG-SUM](https://huggingface.co/ctu-aic/colbertv2-qacg-sum/tree/main)
 
 ## NLI Veracity Evaluation
-[nli-QACG-SUM](https://huggingface.co/ctu-aic/nli-qacg-sum)
+[nli-QACG-sum](https://huggingface.co/ctu-aic/nli-qacg-sum)
 
 ## NLI Annotations
 (TBD)
