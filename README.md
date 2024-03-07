@@ -14,7 +14,7 @@ Currently in review for [NCAA](https://link.springer.com/journal/521) journal.
 ## Code
 * [QACG Data Generation](https://github.com/aic-factcheck/Zero-shot-Fact-Verification)
 * [ColBERTv2](https://github.com/aic-factcheck/ColBERTv2)
-* [FactSearch](https://github.com/aic-factcheck/Zero-shot-Fact-Verification)
+* [FactSearch](https://github.com/aic-factcheck/factsearch)
 
 Overall information on running the code (TBD)
 
