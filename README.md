@@ -47,5 +47,6 @@ Overall information on running the code (TBD)
 
 ## NLI Annotations
 (TBD)
+
 ## Evidence Retrieval Annotations
-(TBD)
+[Here](data/ncaa/er_annotations)
