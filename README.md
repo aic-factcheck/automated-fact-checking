@@ -46,7 +46,7 @@ Overall information on running the code (TBD)
 [nli-QACG-sum](https://huggingface.co/ctu-aic/nli-qacg-sum)
 
 ## NLI Annotations
-(TBD)
+[Here](data/ncaa/nli_annotations)
 
 ## Evidence Retrieval Annotations
 [Here](data/ncaa/er_annotations)

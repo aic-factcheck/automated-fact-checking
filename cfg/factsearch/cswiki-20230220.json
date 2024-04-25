@@ -1,0 +1,72 @@
+{
+    "corpus_name": "Wikipedia CS🇨🇿",
+    "corpus_version": "(2023/20/02)",
+    "lang": "cs",
+    "hosting_path": "wikics",
+    "db_path": "/mnt/data/factcheck/wiki/cs/20230220/paragraphs/cswiki-20230220-paragraphs.jsonl",
+    "default_date": "2023-02-20T00:00:00",
+    "original_site_prefix": "https://cs.wikipedia.org/wiki/",
+    "temporal": false,
+    "retrieval_models": {
+        "colbertv2": {
+            "name": "ColBERTv2",
+            "type": "rest-api",
+            "url": "http://a01:8050/api/v1/retrieve/"
+        },
+        "directed": {
+            "name": "DIR (ColBERTv2)",
+            "type": "directed",
+            "retrieval_models": ["colbertv2"],
+            "similarity": "fasttext",
+            "stopword_list": "data/stopwords/cs.txt",
+            "ner_model_name": "/mnt/data/factcheck/models/czert/PAV-ner-CNEC",
+            "fast_text_model": "/mnt/data/factcheck/fasttext/cc.cs.300.bin",
+            "similarity_threshold": 0.5,
+            "similarity_min_chars": 3,
+            "ner_weight": 2.0
+        }
+    },
+    "nli_models": {
+        "xlm": {
+            "name": "xlmr-xnli-csfever2",
+            "model_name": "/home/drchajan/devel/python/FC/Zero-shot-Fact-Verification/experiments/nli_fever/deepset/xlm-roberta-large-squad2_cs_CZ_lr1e-6/checkpoint-190720_calibrated",
+            "type": "default",
+            "claim_first": true
+        }
+    },
+    "scoring_models": {
+        "czert": {
+            "name": "CZERT",
+            "model_name": "/mnt/data/factcheck/models/drchajan_EXP/data_titles-cs/czert-bert-base-cased--2020-10-06_e5_mp500_negs1_hnp0.0_NFC"
+        }
+    },
+    "default_importance_model": "czert",
+    "slots": [
+        {
+            "retrieval_model_name": "colbertv2",
+            "k": 10,
+            "importance": "czert",
+            "importance_type": "sentence",
+            "nli_model_name": "xlm"
+        }
+    ],
+    "emphasize": {
+        "similarity": "jaro",
+        "stopword_list": "data/stopwords/cs.txt",
+        "similarity_threshold": 0.8,
+        "similarity_min_chars": 3
+    },
+    "initslots": 1,
+    "show_search_titles": false,
+    "show_detailed_score": false,
+    "show_model": false,
+    "show_n_results": true,
+    "show_importance": false,
+    "show_granularity": false,
+    "show_nli_model": false,
+
+    "merge_search_and_slot_options": true,
+
+    "show_stats": false,
+    "show_score": true
+}
